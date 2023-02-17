@@ -4,7 +4,7 @@
  * main - Entry point
  * A program that prints the size of various types
  * of computer it is compiled and run on.
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
