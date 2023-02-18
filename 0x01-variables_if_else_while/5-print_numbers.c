@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  maini - A program that prints all single digit numbers of base 10.
+ *  main - A program that prints all single digit numbers of base 10.
  *
  *  Return: Always 0 (Success)
  */
