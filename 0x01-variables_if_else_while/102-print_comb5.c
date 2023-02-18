@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
- * main - A program that prints all possible combinations of
- * tw-digit numbers.
+ * main -  print program entry point
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 
 int main(void)
@@ -13,24 +11,23 @@ int main(void)
 
 	for (a = 0; a < 100; a++)
 	{
-	for (b = 0; b < 100; b++)
-	{
-		if (a < b)
+		for (b = 0; b < 100; b++)
 		{
-			putchar((a / 10) + 48);
-			putchar((a % 10) + 48);
-			putchar(' ');
-			putchar((b / 10) + 48);
-			putchar((b % 10) + 48);
-			if (a != 98 || b != 99)
+			if (a < b)
 			{
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
 				putchar(' ');
-				putchar(' ');
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+				if (a != 98 || b != 99)
+				{
+					putchar (',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	}
 	putchar('\n');
-
 	return (0);
 }
