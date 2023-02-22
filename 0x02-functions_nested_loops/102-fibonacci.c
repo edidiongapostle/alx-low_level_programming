@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - A program that finds and prints the sum 
- * even-values terms.
+ * main - Prints the first 52 fibonacci numbers
  *
  * Return: Nothing!
  */
-
 int main(void)
 {
 	int i = 0;
