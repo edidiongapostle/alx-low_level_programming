@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*print_numbers - a function that prints the numbers from 0-9
-* owned by Bwave ICT
-*Return: void
+*print_numbers - a function that prints the numbers from 0 - 9
+*
+*Return: 0
 */
 
 void print_numbers(void)
