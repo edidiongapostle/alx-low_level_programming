@@ -9,18 +9,21 @@
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	int a, b;
+	char *s = dest;
 
-	for (a = 0; dest[a] != '\0'; a++)
+	while (*dest != '\0')
 	{
-		continue;
+		dest++;
 	}
-	for (b = 0; src[b] != '\0' && b < n; b++)
+
+	while (*src != '\0')
 	{
-		dest[a + b] = src[b];
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	dest[a + b] = '\0';
-	return (dest);
+	*dest = '\0';
+	return (s);
 }
