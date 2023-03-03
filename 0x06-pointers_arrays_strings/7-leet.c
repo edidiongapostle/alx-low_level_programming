@@ -1,45 +1,26 @@
 #include "main.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
- * leet - a function that encodes a string into 1337
- *@str: string
- * Return: str
+ * leet - function taht encodes a string into 1337
+ *
+ * @s: string to encode
+ *
+ * Return: s
  */
-
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *result = malloc(strlen(str) + 1);
-	char *p = result;
+	int i, d;
+	char c[] = "aAeEoOtTlL";
+	char l[] = "4433007711";
 
-	for (; *str != '\0'; str++, p++)
+	for (i = 0; *(s + i); i++)
 	{
-		if (*str == 'a' || *str == 'A')
+		for (d = 0; d <= 9; d++)
 		{
-			*p = '4';
-		}
-		else if (*str == 'e' || *str == 'E')
-		{
-			*p = '3';
-		}
-		else if (*str == 'o' || *str == 'O')
-		{
-			*p = '0';
-		}
-		else if (*str == 't' || *str == 'T')
-		{
-			*p = '7';
-		}
-		else if (*str == 'l' || *str == 'L')
-		{
-			*p = '1';
-		}
-		else
-		{
-			*p = *str;
+			if (c[d] == s[i])
+				s[i] = l[d];
 		}
 	}
-
-	return (str);
+	return (s);
 }
+
