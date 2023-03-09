@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
+/**
  * _puts_recursion - a function that prints a string
  *
- * @s: string
+ * @s:string
  *
- * Retur: 0
+ * Return: void
  */
 
 void _puts_recursion(char *s)
