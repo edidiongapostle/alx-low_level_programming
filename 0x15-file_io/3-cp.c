@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
  * error_exit - prints an error message to standard error and exits
  * @msg: error message to be printed
